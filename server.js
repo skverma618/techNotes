@@ -7,7 +7,7 @@ const errorHandler = require('./middleware/errorHandler')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const corsOptions = require('./config/corsOptions')
-const path = require("path");
+const path = require("path")
 const connectDb = require('./config/dbConn')
 const mongoose = require('mongoose')
 const {logEvents} = require('./middleware/logger')
@@ -35,6 +35,7 @@ app.use("/", express.static(path.join(__dirname, "public")));
 // app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", require("./routes/root"));
+app.use("/users", require("./routes/userRoutes"));
 
 app.all("*", (req, res) => {
     res.status(404);
@@ -60,4 +61,4 @@ mongoose.connection.once('open',()=>{
 
 mongoose.connection.on('error',(err)=>{
     console.log(err);
-})
+}) // shouldn't we place this code bloack at th top of the file before the the routes and middlewares are used?

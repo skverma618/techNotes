@@ -15,4 +15,5 @@
 15. [ ] - npm i mongoose
 16. [ ] - create model
 17. [ ] - npm i mongoose-sequence ( for creating sequential ticket numbers )
+18. [ ] - npm i express-async-handler bcrypt
  
