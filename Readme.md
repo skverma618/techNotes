@@ -21,5 +21,11 @@
 21. [ ] - Make sure that its workable later on, especially if the client is going to come again to add more features
 22. [ ] - npm i react-router-dom
 23. [ ] - npm i @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-24. [ ] - 
+24. [ ] - npm i @reduxjs/toolkit react-redux
+
+
+
+BACKEND AIUTH
+
+create rate-limiter for login route => install the dependecy => npm i express-rate-limit 
  

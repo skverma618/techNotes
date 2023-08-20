@@ -64,6 +64,8 @@ const updateUser = asyncHandler(async (req, res) => {
 
     // Confirm data 
     if (!id || !username || !Array.isArray(roles) || !roles.length || typeof active !== 'boolean') {
+        console.log(!id )
+
         return res.status(400).json({ message: 'All fields except password are required' })
     }
 
